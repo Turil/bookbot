@@ -5,9 +5,11 @@ def main():
     print(f"{num_words} words found in the document")
     print(count_characters(text))
 
+
 def count_words(text):
     words = text.split()
     return len(words)
+
 
 def get_text(path):
     with open(path) as f:
@@ -25,5 +27,5 @@ def count_characters(text):
     return my_dict
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
